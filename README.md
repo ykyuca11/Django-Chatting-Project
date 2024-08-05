@@ -64,6 +64,8 @@ After sending message, new table will create. if you look actions, you can see t
 
 > **Note** : When message is reply, reply icon changes info button
 
+> **Note** : When readStatus = False, the message's background turns yellow. If you make Message readed, you can open InfoModal or ReplyModal  
+
 ![image](https://github.com/user-attachments/assets/0764abde-e751-430f-917f-c0de86be4f9d)
 
 
