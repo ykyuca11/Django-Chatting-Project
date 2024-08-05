@@ -1,0 +1,24 @@
+{%extends 'core/base.html' %}
+{%block title%}Profilim{%endblock%}
+
+{%block content%}
+<div style="margin-top: 5%;" class="container">
+    <h2>Kullanıcı Profili</h2>
+    <p><strong>Kullanıcı adı:</strong> {{ request.user.username }}</p>
+    <p><strong>Email:</strong> {{ request.user.email }}</p>
+    <p><strong>Tam Ad:</strong> {{ request.user.first_name }} {{request.user.last_name}}</p> <!--SONRA YAP-->
+    
+    {% if profile.profile_photo %}
+        <img src="{{ profile.profile_photo.url }}" alt="Profile Photo" width="200">
+    {% else %}
+        <p>Profil Fotğrafı yüklenmedi.</p>
+    {% endif %}
+
+    <!-- Simple form without Django form class -->
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="profile_photo">
+        <button type="submit" class="btn btn-success">▲</button>
+    </form>
+</div>
+{%endblock%}
