@@ -21,7 +21,7 @@ tweetapp is twitter's clone. in my prject, you can;
 pip install Django
 ~~~
 
-### widget_tweaks
+### Django-channels
 [Django Channels Documents](https://pypi.org/project/django-channels/)
 
 ~~~
