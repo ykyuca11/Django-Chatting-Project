@@ -1,4 +1,4 @@
-# Django Tweet Project
+# Django Message Project
 
 ## What is Chatting App?
 
