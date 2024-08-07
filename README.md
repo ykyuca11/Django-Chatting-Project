@@ -10,7 +10,7 @@ tweetapp is twitter's clone. in my prject, you can;
 * authentication
 * profile
 
-> **Note** : I use SQL3
+> **Note** : I use SQLite
 
 ## libraries
 
